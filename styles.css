@@ -1,0 +1,101 @@
+:root {
+    --white: #fafafa;
+   --black: #121212;
+   --accent-color: #2A57CA;
+   --general-font: 'Montserrat', sans-serif;
+   --accent-font: 'MuseoModerno', cursive;
+   --general-size: 1.2rem;
+   --image-border: 1.5px solid var(--accent-color);
+   --border-width: 1.5px;
+}
+* {
+    box-sizing: border-box;
+    scrollbar-width: auto;
+    scrollbar-color: #8c8c8c var(--white);
+} :-webkit-autofill, :-webkit-autofill:hover, :-webkit-autofill:focus { 
+    background-color: unset;
+    border: none; 
+} *::-webkit-scrollbar {
+    width: 10px;
+} *::-webkit-scrollbar-track {
+    background: var(--white);
+} *::-webkit-scrollbar-thumb {
+    background-color: #8c8c8c;
+    border-radius: 10px;
+    border: 0px none #ffffff;
+} body {
+    background-color: var(--white);
+    margin: 0%;
+    padding: 0%;
+}
+
+main > section:not(.sectionWithImage){
+    padding: 20px;
+} main > section {
+    padding: 50px 0px 50px;
+    border-bottom: 1.5px solid #12121210;
+}
+
+/*FONTS*/
+.blackText, .FirstItem_Montserrat, .SecondItem_Montserrat, .ThirdItem_Montserrat {
+    color: var(--black);
+}
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--black);
+} .ThinSmall_MuseoModerno, h2, h1, .slogan {
+    font-family: var(--accent-font);
+} .ThinSmall_MuseoModerno {
+    color: var(--black);
+    font-weight: 300;
+    font-size: var(--general-size);
+} h2 {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.SecondItem_Montserrat, .RegularMedium_Montserrat, .ThirdItem_Montserrat, .FirstItem_Montserrat {
+    font-family: var(--general-font);
+    font-size: var(--general-size);
+} .FirstItem_Montserrat {
+    font-weight: 500;
+} .SecondItem_Montserrat {
+    font-weight: 300;
+} .ThirdItem_Montserrat {
+    font-weight: 300;
+    opacity: 75%;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+/*ICONS*/
+.blackIcon {
+    color: var(--black);
+}
+.thin_icon {
+    stroke-width: calc(var(--border-width) * 0.7);
+    width: calc(var(--general-size) * 1.4);
+    height: calc(var(--general-size) * 1.4);
+}
+
+/*Flex*/
+.flexRowBetween, .flexRowEvenly {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.flexRowBetween {
+    justify-content: space-between;
+} .flexRowEvenly {
+    justify-content: space-evenly;
+}
+.centerVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

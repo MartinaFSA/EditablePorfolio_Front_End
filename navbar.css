@@ -1,0 +1,28 @@
+nav {
+    padding: 5px 20px;
+    position: fixed;
+    background: #fafafa;
+    opacity: 75%;
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    width: 100%;
+    z-index: 10;
+} nav ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+} nav li {
+    display: inline-block;
+} nav button {
+    background-color: transparent;
+    border-radius: 150px;
+    padding: 0.2rem 2rem;
+    border: 1.5px solid var(--black);
+} nav svg {
+    margin: 0px 5px;
+} .imgNavBar img {
+    height: 30px;
+} nav a {
+    color: unset;
+    text-decoration: none;
+}

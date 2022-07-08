@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name LastName</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=MuseoModerno:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<body>
+    <header>
+        <nav class="flexRowBetween">
+            <ul class="flexRowBetween">
+                <li class="imgNavBar"><a href="index.html"><img src="assets/logo_argPrograma.png" alt="Logo de Argentina Programa"></a></li>
+                <li class="ThinSmall_MuseoModerno"><a href="index.html">Argentina Programa #YoProgramo</a></li>
+            </ul>
+            <ul class="flexRowBetween">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="instagram"></a></i>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="facebook"></i></a></li>
+                <li><button class="ThinSmall_MuseoModerno">Log In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Introduction-->
+        <section class="sectionWithImage">
+            <section class="introductionSection flexRowBetween">
+                <div>
+                    <h1>Laura Rodriguez Doe</h1>
+                    <p>Diseñadora industrial y entusiasta del diseño gráfico con experiencia real y un amplio porfolio de proyectos. Comprometida y responsable, aporto un gran nivel de calidad y cumplo los objetivos que me pongo como profesional.</p>
+                    <p>Encontrame en Buenos Aires, Argentina</p>
+                    <a href="#">Ir a mi portfolio</a>
+                </div>
+                <div>
+                    <img src="assets/defaultImages/person_pic.png" alt="Foto de lorem ipsum">
+                </div>
+            </section>
+            <div class="slogan">
+                <i class="arrowSlogan" data-feather="arrow-down"></i>
+                <p>LET’S CAPTURE ALL THE FEELS</p>
+            </div>
+        </section>
+        <!--About me-->
+        <section class="aboutMeSection sectionWithImage flexRowBetween">
+            <div>
+                <img src="assets/defaultImages/profession_banner-design.jpg" alt="Foto mostrando códigos de programación">
+            </div>
+            <div>
+                <h2>Sobre mí</h2>
+                <p class="RegularMedium_Montserrat blackText">Disfruto de crear, planificar y concretar ideas. Siempre busco aprender algo nuevo y mejorar mis habilidades. Trabajo mejor en grupo, valoro el compañerismo, el vaivén de ideas y los espacios para compartir opiniones profesionales desde diversas perspectivas.</p>
+            </div>
+        </section>
+        <!--Experience-->
+        <section>
+            <div class="flexRowBetween">
+                <h2>Experiencia laboral</h2>
+                <a href="" class="RegularMedium_Montserrat">Descargá mi CV</a>
+            </div>
+            <div class="centerVertical RegularMedium_Montserrat">
+                <div class="flexRowEvenly ctn_experience blackText">
+                    <script>
+                        for(i=1; i<4; i++){
+                            document.write('<div class="experienceItem"> <span></span><p>Empresa</p> <p>Puesto laboral</p> <ul> <li></li> </ul> <p>Fecha ingreso - Fecha egreso</p> </div>')
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <!--Icons-->
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
