@@ -1,0 +1,30 @@
+[
+    {
+        "company": "Empresa",
+        "jobTitle": "Puesto laboral",
+        "tasks": ["Tarea laboral1", "Tarea laboral2", "Tarea laboral3", "Tarea laboral4"],
+        "startDate": "Junio 2018",
+        "finishedDate": "Agosto 2021"
+    },
+    {
+        "company": "Empresa Dos",
+        "jobTitle": "Puesto laboral Dos",
+        "tasks": ["Tarea laboral1", "Tarea laboral2"],
+        "startDate": "Septiembre 2021",
+        "finishedDate": "Junio 2022"
+    },
+    {
+        "company": "Empresa Tres",
+        "jobTitle": "Puesto laboral Tres",
+        "tasks": ["Tarea laboral", "Tarea laboral", "Tarea laboral"],
+        "startDate": "Junio 2022",
+        "finishedDate": "Actualidad"
+    },
+    {
+        "company": "Empresa Tres",
+        "jobTitle": "Puesto laboral Tres",
+        "tasks": ["Tarea laboral", "Tarea laboral", "Tarea laboral"],
+        "startDate": "Junio 2022",
+        "finishedDate": "Actualidad"
+    }
+]

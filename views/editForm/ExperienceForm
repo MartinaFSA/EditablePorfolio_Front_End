@@ -1,0 +1,35 @@
+ 
+<form action="">
+    <!--  acá un foreach para cada empresa  -->
+    <fieldset>
+        <label for="">Empresa</label>
+        <input type="text" placeholder="${'nombreEmpresa'}">
+
+        <label for="">Puesto</label>
+        <input type="text" placeholder="${'Puesto que ocupaste en la empresa'}">
+
+        <label for="">Tareas</label>
+        <input type="text" placeholder="${'Tareas que realizaste en la empresa'}">
+
+        <label for="">Fecha de ingreso</label>
+        <input type="text" placeholder="${'06/09/2020'}">
+        <label for="">Fecha de salida</label>
+        <input type="text" placeholder="${'23/05/2021'}">
+    </fieldset>
+   
+    <fieldset>
+        <label for="">Empresa2</label>
+        <input type="text" placeholder="${'nombreEmpresa2'}">
+
+        <label for="">Puesto</label>
+        <input type="text" placeholder="${'Puesto que ocupaste en la empresa2'}">
+
+        <label for="">Tareas</label>
+        <input type="text" placeholder="${'Tareas que realizaste en la empresa2'}">
+
+        <label for="">Fecha de ingreso</label>
+        <input type="text" placeholder="${'04/07/2021'}">
+        <label for="">Fecha de salida</label>
+        <input type="text" placeholder="${'13/09/2022'}">
+    </fieldset>
+  </form>

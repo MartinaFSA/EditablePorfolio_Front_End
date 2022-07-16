@@ -1,0 +1,177 @@
+:root {   
+   --bord: 10px;
+   --size: 100px; 
+}
+/*Introduction*/
+.slogan {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.arrowSlogan {
+    stroke-width: 0.13rem;
+    width: 3rem;
+    height: 3rem;
+    stroke: var(--accent-color);
+}
+.introductionSection {
+    font-weight: 300;
+    color: var(--black);    
+    font-family: var(--general-font);
+    font-size: 1.4rem;
+} .introductionSection p {
+    margin: 0%;
+    padding: 5px 0px;
+}
+.introductionSection img {
+    width: 45vw;
+    border-radius: 20% 0% 0% 40%;
+    border-top: var(--image-border);
+    border-left: var(--image-border);
+    border-bottom: var(--image-border);
+} .introductionSection > div:first-of-type {
+    padding: 0px 40px;
+}
+
+/*ABOUT ME*/
+.aboutMeSection img{
+    max-width: 45vw;
+    max-height: 90vh;
+    border-radius: 0% 500px 500px 0%;
+    border-top: var(--image-border);
+    border-right: var(--image-border);
+    border-bottom: var(--image-border);
+}
+.aboutMeSection div:nth-of-type(2){
+    margin: 0px 50px;
+}
+
+/*EXPERIENCE*/
+.ctn_experience, .ctn_education {
+    max-width: 1080px;
+    width: 90vw;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.experienceItem {
+    width: 25vw;
+}
+.experienceItem, .educationItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 200px;
+    margin: 20px 10px;
+} .experienceItem span {
+    background-color: var(--accent-color);
+    width: 2px;
+    margin-right: 5px;
+    height: 1rem;
+} .experienceItem div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} .experienceItem li {
+    display: block;
+} .experienceItem ul {
+    display: none;
+} .experienceItem:hover~ .experienceItem ul {
+    display: block;
+}
+/*Education*/ 
+.educationItem {
+    width: 28vw;
+} 
+.educationItem_title {
+    padding: unset 10px;
+    width: 90%;
+    min-width: 150px;
+    height: 120px;
+    border: var(--image-border);
+    border-radius: 70px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .educationItem_title:hover {
+    background-color: var(--accent-color);
+    color: white;
+}.educationItem_text {
+    margin-left: 20px;
+} #educationItem_body img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100%;
+    border: var(--border-width) solid #1212124b;
+} #educationItem_body {
+    margin-top: 50px;
+} .educationItem_text li {
+    margin-top: 5px;
+} .educationItem_body {
+    margin-bottom: 15px;
+}
+
+
+/*SKILLS*/
+.centerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} .chart {
+    flex-direction: column;
+    width:  var(--size);
+    margin: auto 5px;
+} .chart > div:first-of-type{
+    width: var(--size);
+    height: var(--size);
+    padding: 5px;
+}
+.chart > div:first-of-type {
+    margin: 1rem auto;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--accent-color) var(--value), #C4C4C4 var(--value));
+    position: relative;
+} .chart > div:first-of-type::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - var(--bord));
+    height: calc(100% - var(--bord));
+    background: var(--white);
+    border-radius: inherit;
+} .chart  > div:first-of-type > p {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: bold;
+} .x-100 {
+    --value: 100%;
+} .x-90 {
+    --value: 90%;
+} .x-80 {
+    --value: 80%;
+} .x-70 {
+    --value:70%;
+} .x-60 {
+    --value: 60%;
+} .x-50 {
+    --value: 50%;
+} .x-40 {
+    --value: 40%;
+} .x-30 {
+    --value: 30%;
+} .x-20 {
+    --value: 20%;
+} .x-10 {
+    --value: 10%;
+} .skills_text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}

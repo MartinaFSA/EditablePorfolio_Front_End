@@ -5,7 +5,7 @@
    --general-font: 'Montserrat', sans-serif;
    --accent-font: 'MuseoModerno', cursive;
    --general-size: 1.2rem;
-   --image-border: 1.5px solid var(--accent-color);
+   --image-border: var(--border-width) solid var(--accent-color);
    --border-width: 1.5px;
 }
 * {
@@ -17,6 +17,7 @@
     border: none; 
 } *::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 } *::-webkit-scrollbar-track {
     background: var(--white);
 } *::-webkit-scrollbar-thumb {
@@ -35,7 +36,13 @@ main > section:not(.sectionWithImage){
     padding: 50px 0px 50px;
     border-bottom: 1.5px solid #12121210;
 }
-
+ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+} li {
+    list-style: none;
+}
 /*FONTS*/
 .blackText, .FirstItem_Montserrat, .SecondItem_Montserrat, .ThirdItem_Montserrat {
     color: var(--black);

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta name="author" content="MartinaFSA">
+    <meta name="keywords" content="portfolio, personal page, web developer, martina fernandez suarez anzorena, desarrolladora web, diseñadora gráfica"/>
+    <meta name="description" content="Currículum web y portfolio personalizables."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+
+    <title>Laura Rodriguez Doe</title>
+    <link rel="icon" href="../assets/miLogo.ico" />
+    <!--<link rel="icon" href="../../assets/miLogo.ico" /> -->
+
+    <!--Styles-->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=MuseoModerno:wght@300;500&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<body>
+    <header>
+        <nav class="flexRowBetween">
+            <ul class="flexRowBetween">
+                <li class="imgNavBar"><a href="index.html"><img src="../assets/logo_argPrograma.png" alt="Logo de Argentina Programa"></a></li>
+                <li class="ThinSmall_MuseoModerno"><a href="index.html">Argentina Programa #YoProgramo</a></li>
+            </ul>
+            <ul class="flexRowBetween">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="instagram"></a></i>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="facebook"></i></a></li>
+                <li><button class="ThinSmall_MuseoModerno">Log In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Introduction-->
+        <section class="sectionWithImage">
+            <section class="introductionSection flexRowBetween">
+                <div>
+                    <h1>Laura Rodriguez Doe</h1>
+                    <p>Diseñadora industrial y entusiasta del diseño gráfico con experiencia real y un amplio porfolio de proyectos. Comprometida y responsable, aporto un gran nivel de calidad y cumplo los objetivos que me pongo como profesional.</p>
+                    <p>Encontrame en Buenos Aires, Argentina</p>
+                    <a href="#">Ir a mi portfolio</a>
+                </div>
+                <div>
+                    <img src="../assets/defaultImages/person_pic.png" alt="Foto de lorem ipsum">
+                </div>
+            </section>
+            <div class="slogan">
+                <i class="arrowSlogan" data-feather="arrow-down"></i>
+                <p>LET’S CAPTURE ALL THE FEELS</p>
+            </div>
+        </section>
+        <!--About me-->
+        <section class="aboutMeSection sectionWithImage flexRowBetween">
+            <div>
+                <img src="../assets/defaultImages/profession_banner-design.jpg" alt="Foto mostrando códigos de programación">
+            </div>
+            <div>
+                <h2>Sobre mí</h2>
+                <p class="RegularMedium_Montserrat blackText">Disfruto de crear, planificar y concretar ideas. Siempre busco aprender algo nuevo y mejorar mis habilidades. Trabajo mejor en grupo, valoro el compañerismo, el vaivén de ideas y los espacios para compartir opiniones profesionales desde diversas perspectivas.</p>
+            </div>
+        </section>
+        <!--Experience-->
+        <section>
+            <div class="flexRowBetween">
+                <h2>Experiencia laboral</h2>
+                <a href="" class="RegularMedium_Montserrat" download="MartinaFernandezSuarezAnzorena_CV">Descargá mi CV</a>
+            </div>
+            <div class="centerVertical RegularMedium_Montserrat">
+                <div class="flexRowEvenly ctn_experience blackText" id="ctn_experienceItems">
+                    <!--This should be a component such as jsx or vue ones--><script src="../data/user_experience.js"></script>
+                </div>
+            </div>
+        </section>
+        
+        <!--Education-->
+        <section>
+            <h2>Educación</h2>
+            <div class="centerVertical RegularMedium_Montserrat">
+                <div class="ctn_education">
+                    <div id="ctn_educationItems" class="flexRowEvenly ">
+                    
+                        <!--This should be a component such as jsx or vue ones--><script src="../data/user_education.js"></script>
+                    </div>
+                    
+                    <div>
+                        <div class="blackText flexRowEvenly" id="educationItem_body">
+                            <img src="../assets/defaultImages/logo_CaC.png" alt="Logo de ${educationItem.courses[1].institution}">
+                            <ul class="educationItem_text">
+                                <li class="FirstItem_Montserrat">${educationItem.courses[1].certificate} </li>
+                                <li class="SecondItem_Montserrat">${educationItem.courses[1].institution} </li>
+                                <li class="SecondItem_Montserrat">- ${educationItem.courses[1].abilities} </li>
+                                <li class="ThirdItem_Montserrat">${educationItem.courses[1].dateOfGraduation} </li>
+                            </ul>
+                        </div>
+                        <div class="blackText flexRowEvenly" id="educationItem_body">
+                            <img src="../assets/defaultImages/logo_CaC.png" alt="Logo de ${educationItem.courses[1].institution}">
+                            <ul class="educationItem_text">
+                                <li class="FirstItem_Montserrat">${educationItem.courses[2].certificate} </li>
+                                <li class="SecondItem_Montserrat">${educationItem.courses[2].institution} </li>
+                                <li class="SecondItem_Montserrat">- ${educationItem.courses[2].abilities} </li>
+                                <li class="ThirdItem_Montserrat">${educationItem.courses[2].dateOfGraduation} </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Skills-->
+        <section>
+            <div>
+                <h2>Habilidades</h2>
+            </div>
+            <div class="centerVertical RegularMedium_Montserrat">
+                <div class="flexRowEvenly blackText" id="ctn_skills">
+                    <!--This should be a component such as jsx or vue ones--><script src="../data/user_skills.js"></script>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer></footer>
+    <!--Icons-->
+    <script>
+        feather.replace()
+    </script>
+    <script type="text/javascript" src="../data/user_experience.json"></script>
+    <!-- Bootstrap --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
