@@ -1,0 +1,39 @@
+footer {
+    padding: 20px;
+} footer form {
+    width: 40vw;
+    max-width: 800px;
+    font-size: var(--general-size);
+} footer form label, footer form input {
+    display: block;
+    color: var(--black);
+} footer form button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 150px;
+    padding: 0.2rem 3rem;
+    border: none;
+} footer form label {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+} footer form input {
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    border: var(--border-width) solid #4A4A4A;
+    margin-bottom: 20px;
+} #mail_message {
+    height: 20vh;
+}
+
+.footer_contact {
+    width: 35vw;
+} .footer_contact div {
+    margin-bottom: 20px;
+}  .footer_contact a {
+    color: var(--black);
+} .footer_contact i, .footer_contact p {
+    display: inline-block;
+    margin-left: 10px;
+}

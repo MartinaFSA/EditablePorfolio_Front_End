@@ -1,0 +1,28 @@
+.project_row {
+    margin-bottom: 20px;
+} .project_row:nth-of-type(2n) {
+    flex-direction: row-reverse;
+} .project_row div:first-of-type {
+    min-width: 250px;
+    height: 60vh;
+    max-height: 800px;
+    width: 45vw;
+    position: relative;
+    margin-right: 20px;
+}  .project_row div:nth-of-type(2) {
+    width: 45vw;
+} .project_row img {
+    border-radius: 10px;
+    border: var(--border-width) solid #42424274;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+} .project_row p {
+    margin-bottom: 10px;
+}
+main {
+    padding-top: 40px;
+} h1 {
+    padding-bottom: 30px;
+}

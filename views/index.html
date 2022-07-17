@@ -16,6 +16,7 @@
 
     <!--Styles-->
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/homepage.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     
@@ -51,7 +52,7 @@
                     <h1>Laura Rodriguez Doe</h1>
                     <p>Diseñadora industrial y entusiasta del diseño gráfico con experiencia real y un amplio porfolio de proyectos. Comprometida y responsable, aporto un gran nivel de calidad y cumplo los objetivos que me pongo como profesional.</p>
                     <p>Encontrame en Buenos Aires, Argentina</p>
-                    <a href="#">Ir a mi portfolio</a>
+                    <a href="Portfolio.html">Ir a mi portfolio</a>
                 </div>
                 <div>
                     <img src="../assets/defaultImages/person_pic.png" alt="Foto de lorem ipsum">
@@ -121,6 +122,34 @@
 
         <!--Skills-->
         <section>
+            <div class="flexRowBetween">
+                <h2>Proyectos destacados</h2>
+                <a href="Portfolio.html" class="RegularMedium_Montserrat">Portfolio</a>
+            </div>
+            <div class="centerVertical RegularMedium_Montserrat">
+                <div class="flexRowEvenly flexWrap blackText" id="ctn_projects">
+                    <div class="project centerVertical">
+                        <img src="../assets/defaultImages/project1.png" alt="">
+                        <div class="gradientOverlay"></div>
+                        <p>Titulo de mi proyecto juasjjua proyecto juasjjua</p>
+                    </div>
+                    <div class="project centerVertical">
+                        <img src="../assets/defaultImages/project1.png" alt="">
+                        <div class="gradientOverlay"></div>
+                        <p>Titulo de mi proyecto juasjjua proyecto juasjjua</p>
+                    </div>
+                    <div class="project centerVertical">
+                        <img src="../assets/defaultImages/project1.png" alt="">
+                        <div class="gradientOverlay"></div>
+                        <p>Titulo de mi proyecto juasjjua proyecto juasjjua</p>
+                    </div>
+                    <!--This should be a component such as jsx or vue ones   <script src="../data/user_skills.js"></script> -->
+                </div>
+            </div>
+        </section>
+
+        <!--Proyectos-->
+        <section>
             <div>
                 <h2>Habilidades</h2>
             </div>
@@ -130,54 +159,35 @@
                 </div>
             </div>
         </section>
-
-        <section>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
     </main>
-    <footer></footer>
+    <footer class="flexRowBetween">
+        <section>
+            <form action="" class="centerVertical">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="" id="">
+
+                <label for="">Asunto</label>
+                <input type="text" name="" id="">
+
+                <label for="message">Mensaje</label>
+                <input type="text" name="message" id="mail_message">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="footer_contact">
+            <h2>Contactame</h2>
+            <div> <a href="https://www.instagram.com/"><i class="thin_icon" data-feather="instagram"></i><p>@nombre.design</p></a> </div>
+            <div> <a href="https://www.twitter.com/"><i class="thin_icon" data-feather="twitter"></i><p>@nombre.design</p></a> </div>
+            <div> <a href="https://www.facebook.com/"><i class="thin_icon" data-feather="facebook"></i><p>Laura Doe</p></a> </div>
+        </section>
+    </footer>
     <!--Icons-->
     <script>
         feather.replace()
     </script>
     <script type="text/javascript" src="../data/user_experience.json"></script>
+    <!-- SweetAlert --><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

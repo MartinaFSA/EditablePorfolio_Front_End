@@ -1,0 +1,5 @@
+# Ignora los archivos para developing
+basicStructure.html
+
+# Ignora los archivos con datos sensibles
+.env

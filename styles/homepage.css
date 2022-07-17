@@ -51,7 +51,7 @@
 }
 
 /*EXPERIENCE*/
-.ctn_experience, .ctn_education {
+.ctn_experience, .ctn_education, .ctn_projects {
     max-width: 1080px;
     width: 90vw;
     align-items: flex-start;
@@ -174,4 +174,42 @@
     font-size: 1rem;
     font-weight: bold;
     color: var(--accent-color);
+}
+
+/*PROJECTS*/
+.project, .project img, .gradientOverlay {
+    border-radius: 10px;
+}
+.project {
+    min-width: 250px;
+    height: 70vh;
+    max-height: 800px;
+    width: 25vw;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 10px;
+} .project img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+} .gradientOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(180deg, rgba(44, 44, 44, 0) 0%, rgba(26, 26, 26, 0.74) 100%);
+} .project p {
+    font-family: var(--accent-font);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 3;
+    bottom: 0%;
+    width: 100%;
+    margin: unset 10px 5px;
+    text-align: center;
 }

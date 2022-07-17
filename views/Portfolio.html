@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta name="author" content="MartinaFSA">
+    <meta name="keywords" content="portfolio, personal page, web developer, martina fernandez suarez anzorena, desarrolladora web, diseñadora gráfica"/>
+    <meta name="description" content="Currículum web y portfolio personalizables."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+
+    <title>Laura Rodriguez Doe</title>
+    <link rel="icon" href="../assets/miLogo.ico" />
+    <!--<link rel="icon" href="../../assets/miLogo.ico" /> -->
+
+    <!--Styles-->
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=MuseoModerno:wght@300;500&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<body>
+    <header>
+        <nav class="flexRowBetween">
+            <ul class="flexRowBetween">
+                <li class="imgNavBar"><a href="index.html"><img src="../assets/logo_argPrograma.png" alt="Logo de Argentina Programa"></a></li>
+                <li class="ThinSmall_MuseoModerno"><a href="index.html">Argentina Programa #YoProgramo</a></li>
+            </ul>
+            <ul class="flexRowBetween">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="instagram"></a></i>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="facebook"></i></a></li>
+                <li><button class="ThinSmall_MuseoModerno">Log In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Experience-->
+        <section>
+            <div class="flexRowBetween">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="centerVertical RegularMedium_Montserrat">
+                <div class="project_row flexRowBetween">
+                    <div> <img src="../assets/defaultImages/project2.png" alt=""></div>
+                    <div>
+                        <h2>Copia de Mercado Libre</h2>
+                        <p>Maquetado Front-End de la página de inicio de Mercado Libre Argentina.</p>
+                        <p>Desarrollado con: HTML, CSS, Bootstrap, JS y PHP</p>
+                        <p>Adicional: Swiper</p>
+                        <a href="https://www.instagram.com/"><i class="thin_icon" data-feather="external-link"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project_row flexRowBetween">
+                    <div> <img src="../assets/defaultImages/project1.png" alt=""></div>
+                    <div>
+                        <h2>Avatar Generator</h2>
+                        <p>Esta aplicación web es un generador de avatares personalizados. Los usuarios pueden seleccionar el color de piel, ojos y labios del personaje, su peinado y el fondo o seleccionar rasgos al azar. Los personajes pueden ser descargados en formato PNG con un solo click.</p>
+                        <p>Desarrollado con: HTML, CSS, JS y React</p>
+                        <p>Adicional: html2canvas</p>
+                        <a href="https://www.instagram.com/"><i class="thin_icon" data-feather="external-link"></i></a>
+                        <a href="https://www.instagram.com/"><i class="thin_icon" data-feather="github"></i></a>
+                    </div>
+                </div>            
+                    <!--This should be a component such as jsx or vue ones <script src="../data/user_experience.js"></script> -->
+            </div>
+        </section>
+        
+    </main>
+    <footer class="flexRowBetween">
+        <section>
+            <form action="" class="centerVertical">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="" id="">
+
+                <label for="">Asunto</label>
+                <input type="text" name="" id="">
+
+                <label for="message">Mensaje</label>
+                <input type="text" name="message" id="mail_message">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="footer_contact">
+            <h2>Contactame</h2>
+            <div> <a href="https://www.instagram.com/"><i class="thin_icon" data-feather="instagram"></i><p>@nombre.design</p></a> </div>
+            <div> <a href="https://www.twitter.com/"><i class="thin_icon" data-feather="twitter"></i><p>@nombre.design</p></a> </div>
+            <div> <a href="https://www.facebook.com/"><i class="thin_icon" data-feather="facebook"></i><p>Laura Doe</p></a> </div>
+        </section>
+    </footer>
+    <!--Icons-->
+    <script>
+        feather.replace()
+    </script>
+    <script type="text/javascript" src="../data/user_experience.json"></script>
+    <!-- SweetAlert --><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
