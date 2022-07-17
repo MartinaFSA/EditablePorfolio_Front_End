@@ -15,7 +15,7 @@ const skills = [
 const ctn_skills = document.getElementById('ctn_skills');
 //the map returns the commas that separate the objects in the array. forEch returns undefined
 ctn_skills.insertAdjacentHTML('beforeend', skills.map( skill => {
-    document.write(`<div class="centerHorizontal chart centerCenter">
+    document.write(`<div class="centerHorizontal chart centerCenter col">
         <div class="x-${skill.percentage} centerCenter">
             <p>${skill.percentage}%</p>
         </div>

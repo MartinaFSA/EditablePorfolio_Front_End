@@ -74,7 +74,7 @@ const ctn_educationItems = document.getElementById('ctn_educationItems');
 //the map returns the commas that separate the objects in the array. forEch returns undefined
 ctn_educationItems.insertAdjacentHTML('beforeend', education.map( educationItem => {
     document.write(`
-    <div class="educationItem centerVertical"> 
+    <div class="col-4 educationItem"> 
         <div class="educationItem_title">
             <p>${educationItem.category}</p>
         </div>

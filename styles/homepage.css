@@ -53,7 +53,7 @@
 .experienceItem {
     width: 25vw;
 }
-.experienceItem, .educationItem {
+.experienceItem {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -77,9 +77,6 @@
 }
 
 /*Education*/ 
-.educationItem {
-    width: 28vw;
-} 
 .educationItem_title {
     padding: unset 10px;
     width: 90%;
@@ -208,6 +205,14 @@
     text-align: center;
 }
 
+@media screen and (max-width: 620px) {
+    .educationItem {
+        width: 90vw !important;
+        max-width: 250px;
+        margin: 20px 0px;
+    }
+}
+
 @media screen and (max-width: 720px) {
     /*FONTS*/
     .slogan {
@@ -231,6 +236,11 @@
         max-height: 50vh;
     } .aboutMeSection div:first-of-type {
         margin-bottom: 40px;
+    }
+    .educationItem_title {
+        width: 90%;
+        min-width: 150px;
+        height: 120px;
     }
 }
 
@@ -256,5 +266,10 @@
     } .aboutMeSection img {
         max-width: 45vw;
         max-height: 90vh;
+    }
+    .educationItem_title {
+        width: 90%;
+        min-width: 150px;
+        height: 120px;
     }
 }
