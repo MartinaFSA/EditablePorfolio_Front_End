@@ -92,12 +92,13 @@
     color: white;
 }.educationItem_text {
     margin-left: 20px;
-} #educationItem_body img {
+    width: 60vw;
+} .educationItem_body img {
     width: 4.5rem;
     height: 4.5rem;
     border-radius: 100%;
     border: var(--border-width) solid #1212124b;
-} #educationItem_body {
+} .educationItem_body {
     margin-top: 50px;
 } .educationItem_text li {
     margin-top: 5px;

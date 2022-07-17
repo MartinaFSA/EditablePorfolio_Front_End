@@ -81,7 +81,63 @@
             </div>
             <div class="centerVertical RegularMedium_Montserrat">
                 <div class="flexRowEvenly ctn_experience blackText" id="ctn_experienceItems">
-                    <!--This should be a component such as jsx or vue ones--><script src="../data/user_experience.js"></script>
+                    <div class="experienceItem"> 
+                        <div>
+                            <span></span>
+                            <p class="FirstItem_Montserrat">Empresa</p>
+                        </div> 
+                        <p class="SecondItem_Montserrat">Puesto laboral</p>
+                        <ul class="SecondItem_Montserrat" >
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                        </ul> 
+                        <p class="ThirdItem_Montserrat">Agosto 2016 - Febrero 2018</p> 
+                    </div>
+                
+                    <div class="experienceItem"> 
+                        <div>
+                            <span></span>
+                            <p class="FirstItem_Montserrat">Empresa Dos</p>
+                        </div> 
+                        <p class="SecondItem_Montserrat">Puesto laboral Dos</p>
+                        <ul class="SecondItem_Montserrat" >
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                        </ul> 
+                        <p class="ThirdItem_Montserrat">Marzo 2018 - Julio 2020</p> 
+                    </div>
+                
+                    <div class="experienceItem"> 
+                        <div>
+                            <span></span>
+                            <p class="FirstItem_Montserrat">Empresa Tres</p>
+                        </div> 
+                        <p class="SecondItem_Montserrat">Puesto laboral</p>
+                        <ul class="SecondItem_Montserrat" >
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                        </ul> 
+                        <p class="ThirdItem_Montserrat">Noviembre 2020 - Mayo 2021</p> 
+                    </div>
+                
+                    <div class="experienceItem"> 
+                        <div>
+                            <span></span>
+                            <p class="FirstItem_Montserrat">Empresa Cuatro</p>
+                        </div> 
+                        <p class="SecondItem_Montserrat">Puesto laboral</p>
+                        <ul class="SecondItem_Montserrat" >
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                            <li>- Tarea laboral </li>
+                        </ul> 
+                        <p class="ThirdItem_Montserrat">Mayo 2021 - Actualidad</p> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,27 +149,43 @@
                 <div class="ctn_education">
                     <div id="ctn_educationItems" class="container">
                         <div class="row align-items-start">
-                            <!--This should be a component such as jsx or vue ones--><script src="../data/user_education.js"></script>
+                            <div class="col-4 educationItem"> 
+                                <div class="educationItem_title">
+                                    <p>Diseño</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 educationItem"> 
+                                <div class="educationItem_title">
+                                    <p>Programación</p>
+                                </div>
+                            </div>
+                        
+                            <div class="col-4 educationItem"> 
+                                <div class="educationItem_title">
+                                    <p>Inglés</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <div>
-                        <div class="blackText flexRowEvenly" id="educationItem_body">
-                            <img src="../assets/defaultImages/logo_CaC.png" alt="Logo de ${educationItem.courses[1].institution}">
+                        <div class="blackText flexRowEvenly educationItem_body">
+                            <img src="../assets/defaultImages/logo_CaC.png" alt="Logo de Institución">
                             <ul class="educationItem_text">
-                                <li class="FirstItem_Montserrat">${educationItem.courses[1].certificate} </li>
-                                <li class="SecondItem_Montserrat">${educationItem.courses[1].institution} </li>
-                                <li class="SecondItem_Montserrat">- ${educationItem.courses[1].abilities} </li>
-                                <li class="ThirdItem_Montserrat">${educationItem.courses[1].dateOfGraduation} </li>
+                                <li class="FirstItem_Montserrat">Certificado</li>
+                                <li class="SecondItem_Montserrat">Institución</li>
+                                <li class="SecondItem_Montserrat">- Habilidad uno, habilidad dos</li>
+                                <li class="ThirdItem_Montserrat">Junio de 2022</li>
                             </ul>
                         </div>
-                        <div class="blackText flexRowEvenly" id="educationItem_body">
-                            <img src="../assets/defaultImages/logo_CaC.png" alt="Logo de ${educationItem.courses[1].institution}">
+                        <div class="blackText flexRowEvenly educationItem_body">
+                            <img src="../assets/defaultImages/logo_CaC.png" alt="Logo de Institución">
                             <ul class="educationItem_text">
-                                <li class="FirstItem_Montserrat">${educationItem.courses[2].certificate} </li>
-                                <li class="SecondItem_Montserrat">${educationItem.courses[2].institution} </li>
-                                <li class="SecondItem_Montserrat">- ${educationItem.courses[2].abilities} </li>
-                                <li class="ThirdItem_Montserrat">${educationItem.courses[2].dateOfGraduation} </li>
+                                <li class="FirstItem_Montserrat">Certificado</li>
+                                <li class="SecondItem_Montserrat">Institución</li>
+                                <li class="SecondItem_Montserrat">- Habilidad uno, habilidad dos, habilidad tres, habilidad cuatro</li>
+                                <li class="ThirdItem_Montserrat">Noviembre de 2021</li>
                             </ul>
                         </div>
                     </div>
@@ -156,7 +228,37 @@
             </div>
             <div class="centerVertical RegularMedium_Montserrat container">
                 <div class="row blackText" id="ctn_skills">
-                    <!--This should be a component such as jsx or vue ones--><script src="../data/user_skills.js"></script>
+                    <div class="centerHorizontal chart centerCenter col">
+                        <div class="x-80 centerCenter">
+                            <p>80%</p>
+                        </div>
+                        <p class='skills_text'>Budgeting</p>
+                    </div>
+                
+                    <div class="centerHorizontal chart centerCenter col">
+                        <div class="x-60 centerCenter">
+                            <p>60%</p>
+                        </div>
+                        <p class='skills_text'>Creatividad</p>
+                    </div>
+                    <div class="centerHorizontal chart centerCenter col">
+                        <div class="x-80 centerCenter">
+                            <p>80%</p>
+                        </div>
+                        <p class='skills_text'>Edición</p>
+                    </div>
+                    <div class="centerHorizontal chart centerCenter col">
+                        <div class="x-70 centerCenter">
+                            <p>70%</p>
+                        </div>
+                        <p class='skills_text'>Gionaje</p>
+                    </div>
+                    <div class="centerHorizontal chart centerCenter col">
+                        <div class="x-90 centerCenter">
+                            <p>90%</p>
+                        </div>
+                        <p class='skills_text'>Organización</p>
+                    </div>
                 </div>
             </div>
         </section>
