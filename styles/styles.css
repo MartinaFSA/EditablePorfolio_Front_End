@@ -30,6 +30,7 @@ p, ul {
     background-color: var(--white);
     margin: 0%;
     padding: 0%;
+    position: relative;
 }
 
 main > section:not(.sectionWithImage){

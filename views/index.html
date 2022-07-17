@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/homepage.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/modals.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +41,7 @@
             <ul class="flexRowBetween">
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="instagram"></a></i>
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="thin_icon blackIcon" data-feather="facebook"></i></a></li>
-                <li><button class="ThinSmall_MuseoModerno">Log In</button></li>
+                <li><button class="ThinSmall_MuseoModerno" id="logIn_button" onclick="openModal()">Log In</button></li>
             </ul>
         </nav>
     </header>
@@ -161,6 +162,33 @@
             </div>
         </section>
     </main>
+
+    <!--Modales-->
+    <section id="modal_logIn" class="modal_ctn">
+        <div class="modal_background">
+            <section class="modal_box">
+                <div class="ctn_closeModal">
+                    <button onclick="closeModal()"><i class="closeModal" data-feather="x"></i></button>
+                </div>
+                <div class="modal_body">
+                    <h2>Esto es un modal</h2>
+                    <form class="RegularMedium_Montserrat">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email">
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password">
+
+                        <div class="ctn_button">
+                            <button type="button" onclick="loggedIn_success()">Aceptar</button>
+                        </div>
+                    </form>
+                    <button id="openRegister" onclick="changeModal()" class="RegularMedium_Montserrat styleAsLink">o registrarme</button> 
+                </div>
+            </section>
+        </div>
+    </section>
+
     <footer>
         <section>
             <form action="" class="centerVertical">
@@ -188,6 +216,7 @@
         feather.replace()
     </script>
     <script type="text/javascript" src="../data/user_experience.json"></script>
+    <script type="text/javascript" src="../scripts/logIn.js"></script>
     <!-- SweetAlert --><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

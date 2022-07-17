@@ -1,0 +1,74 @@
+#modal_logIn {
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: 15;
+}
+.modal_background {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    background-color: #4242425c;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .modal_box {
+    background-color: var(--white);
+    width: 80vw;
+    border-radius: 20px;
+    height: 80vh;
+} .modal_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+} .modal_body input, .modal_body label {
+    display: block;
+} .modal_body input {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: var(--border-width) solid #4A4A4A;
+    margin-bottom: 20px;
+    min-width: 150px;
+    width: 50vw;
+    max-width: 350px;
+} .modal_body form button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 150px;
+    padding: 0.2rem 3rem;
+    border: none;
+} .ctn_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.styleAsLink {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: none;
+} .styleAsLink:hover {
+    color: #2147a7;
+}
+
+.swal-modal {
+    padding-bottom: 40px;
+} .closeModal {
+    width: 30px;
+    stroke-width: calc(var(--border-width) * 0.7);
+    height: 30px;
+} .ctn_closeModal {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 20px 20px 0px 0px;
+} .ctn_closeModal button {
+    background-color: transparent;
+    border: none;
+}

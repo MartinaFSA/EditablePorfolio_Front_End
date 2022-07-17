@@ -15,7 +15,7 @@ footer {
     margin-bottom: 10px;
     text-align: left;
 } footer form input {
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px 10px;
     border: var(--border-width) solid #4A4A4A;
     margin-bottom: 20px;
