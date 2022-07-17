@@ -1,5 +1,4 @@
 nav {
-    padding: 5px 20px;
     position: fixed;
     background: #fafafa;
     opacity: 75%;
@@ -12,7 +11,6 @@ nav {
 } nav button {
     background-color: transparent;
     border-radius: 150px;
-    padding: 0.2rem 2rem;
     border: 1.5px solid var(--black);
 } nav svg {
     margin: 0px 5px;
@@ -21,4 +19,38 @@ nav {
 } nav a {
     color: unset;
     text-decoration: none;
+} #navbar_argentinaPrograma {
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 520px) {
+    #navbar_argentinaPrograma {
+        display: none;
+    } nav button {
+        padding: 0.2rem 1rem;
+    } nav {
+        padding: 5px;
+    } nav ul:first-of-type {
+        padding: 0%;
+        margin: 0%;
+    }
+}
+@media screen and (min-width: 521px) and (max-width: 720px) {
+    nav button {
+        padding: 0.2rem 1rem;
+    } nav {
+        padding: 5px;
+    } nav ul:first-of-type {
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    nav {
+        padding: 5px 20px;
+    } nav button {
+        padding: 0.2rem 2rem;
+    }
 }

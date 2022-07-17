@@ -1,11 +1,10 @@
 :root {   
    --bord: 10px;
-   --size: 100px; 
+   --size: 100px;
 }
 /*Introduction*/
 .slogan {
     margin-top: 20px;
-    font-size: 2rem;
     color: var(--accent-color);
     display: flex;
     flex-direction: row;
@@ -14,21 +13,17 @@
 }
 .arrowSlogan {
     stroke-width: 0.13rem;
-    width: 3rem;
-    height: 3rem;
     stroke: var(--accent-color);
 }
 .introductionSection {
     font-weight: 300;
     color: var(--black);    
     font-family: var(--general-font);
-    font-size: 1.4rem;
 } .introductionSection p {
     margin: 0%;
     padding: 5px 0px;
 }
 .introductionSection img {
-    width: 45vw;
     border-radius: 20% 0% 0% 40%;
     border-top: var(--image-border);
     border-left: var(--image-border);
@@ -38,9 +33,7 @@
 }
 
 /*ABOUT ME*/
-.aboutMeSection img{
-    max-width: 45vw;
-    max-height: 90vh;
+.aboutMeSection img {
     border-radius: 0% 500px 500px 0%;
     border-top: var(--image-border);
     border-right: var(--image-border);
@@ -82,6 +75,7 @@
 } .experienceItem:hover~ .experienceItem ul {
     display: block;
 }
+
 /*Education*/ 
 .educationItem {
     width: 28vw;
@@ -148,7 +142,7 @@
 } .chart  > div:first-of-type > p {
     position: relative;
     z-index: 1;
-    font-size: 1rem;
+    font-size: calc(var(--general-size) * 0.8);
     font-weight: bold;
 } .x-100 {
     --value: 100%;
@@ -205,11 +199,62 @@
     font-family: var(--accent-font);
     color: var(--white);
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: calc(var(--general-size) * 1.2);
     position: absolute;
     z-index: 3;
     bottom: 0%;
     width: 100%;
     margin: unset 10px 5px;
     text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    /*FONTS*/
+    .slogan {
+        font-size:  calc(var(--general-size) * 1.3);
+    } .arrowSlogan {
+        width: calc(var(--general-size) * 1.6);
+        height: calc(var(--general-size) * 1.6);
+    } .introductionSection {
+        font-size: calc(var(--general-size) * 1);
+    } 
+
+    .introductionSection div:nth-of-type(2) {
+        display: flex;
+        justify-content: flex-end;
+        margin: 40px 0px;
+    } .introductionSection img {
+        width: 80vw;
+        max-width: 400px;
+    } .aboutMeSection img {
+        max-width: 85vw;
+        max-height: 50vh;
+    } .aboutMeSection div:first-of-type {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    /*FONTS*/
+    .slogan {
+        font-size:  calc(var(--general-size) * 1.8);
+    } .arrowSlogan {
+        width: calc(var(--general-size) * 2);
+        height: calc(var(--general-size) * 2);
+    } .introductionSection {
+        font-size: calc(var(--general-size) * 1.2);
+    } 
+
+    .introductionSection, .aboutMeSection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    } .introductionSection img {
+        width: 45vw;
+    } .aboutMeSection img {
+        max-width: 45vw;
+        max-height: 90vh;
+    }
 }

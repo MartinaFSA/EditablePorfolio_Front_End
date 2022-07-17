@@ -1,8 +1,6 @@
 footer {
     padding: 20px;
 } footer form {
-    width: 40vw;
-    max-width: 800px;
     font-size: var(--general-size);
 } footer form label, footer form input {
     display: block;
@@ -15,11 +13,9 @@ footer {
     border: none;
 } footer form label {
     margin-bottom: 10px;
-    width: 100%;
     text-align: left;
 } footer form input {
     border-radius: 10px;
-    width: 100%;
     padding: 5px 10px;
     border: var(--border-width) solid #4A4A4A;
     margin-bottom: 20px;
@@ -27,13 +23,47 @@ footer {
     height: 20vh;
 }
 
-.footer_contact {
-    width: 35vw;
-} .footer_contact div {
+.footer_contact div {
     margin-bottom: 20px;
 }  .footer_contact a {
     color: var(--black);
 } .footer_contact i, .footer_contact p {
     display: inline-block;
     margin-left: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } footer form, .footer_contact {
+        width: 90vw;
+        max-width: 500px;
+        margin-bottom: 40px;
+    } footer form label, footer form input  {
+        width: 90%;
+        max-width: 500px;
+    } .footer_contact {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;    
+    } footer form {
+        width: 40vw;
+        max-width: 800px;
+    } footer form label, footer form input  {
+        width: 100%;
+    }
+
+    .footer_contact {
+        width: 35vw;
+    } 
 }

@@ -4,7 +4,6 @@
    --accent-color: #2A57CA;
    --general-font: 'Montserrat', sans-serif;
    --accent-font: 'MuseoModerno', cursive;
-   --general-size: 1.2rem;
    --image-border: var(--border-width) solid var(--accent-color);
    --border-width: 1.5px;
 }
@@ -88,8 +87,6 @@ a {
 }
 .thin_icon {
     stroke-width: calc(var(--border-width) * 0.7);
-    width: calc(var(--general-size) * 1.4);
-    height: calc(var(--general-size) * 1.4);
 }
 
 /*Flex*/
@@ -108,4 +105,24 @@ a {
     align-items: center;
 } .flexWrap {
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 720px) {
+    :root {
+        --general-size: 1rem;
+    }
+    .thin_icon {
+        width: calc(var(--general-size) * 1.2);
+        height: calc(var(--general-size) * 1.2);
+    }
+}
+
+@media screen and (min-width: 721px) {
+    :root {
+        --general-size: 1.2rem;
+    }
+    .thin_icon {
+        width: calc(var(--general-size) * 1.4);
+        height: calc(var(--general-size) * 1.4);
+    }
 }
