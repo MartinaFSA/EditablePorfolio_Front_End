@@ -1,20 +1,21 @@
 
-/*let experience;
+let experience_json;
 const url = 'user_experience.json';
-function reqExperience(){
-    fetch(url)
-    .then(res=> {
-        JSON.stringify(res)
-    }).then(data => {
-        experience = data;
-        console.log(experience);
-    }).catch((err) => {
-        console.log(err)
-    })
+function reqJSON(){
+    fetch('user_experience.json')
+        .then(res => {
+            console.log(res);
+            return JSON.stringify(res)
+        }).then(data => {
+            experience_json = data;
+            console.log(data);
+            console.log('2wadsfs');
+        }).catch((err) => {
+            console.log(err)
+        })
 }
-reqExperience();
-*/
-
+reqJSON();
+/*
 const experience_json = [
     {
         "company": "Empresa",
@@ -45,7 +46,7 @@ const experience_json = [
         "finishedDate": "Actualidad"
     }
 ]
-
+*/
 const ctn_experienceItems = document.getElementById('ctn_experienceItems');
 //the map returns the commas that separate the objects in the array. forEch returns undefined
 ctn_experienceItems.insertAdjacentHTML('beforeend', experience_json.map( job => {
